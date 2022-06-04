@@ -20,7 +20,7 @@ IMG_SIZE = 200
 
 # #Load my actual data
 DATADIR = 'IMG'
-CATEGORIES = ['OK', 'NOK']
+CATEGORIES = ['fogao', 'geladeiras']
 # CATEGORIES = ['Cat', 'Dog']
 # print(os.path.join(DATADIR, 'OK'))
 
