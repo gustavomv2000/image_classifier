@@ -15,7 +15,7 @@ import pathlib
 plt.style.use('fivethirtyeight')
 # DATADIR = (pathlib.Path(__file__).parent.resolve())
 
-IMG_SIZE = 200
+IMG_SIZE = 100
 
 
 # #Load my actual data
@@ -35,6 +35,7 @@ def create_training_data():
       try:
         img_array = cv2.imread(os.path.join(path, img), cv2.IMREAD_GRAYSCALE)
         new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
+        training_data.append([new_array, class_num])
         training_data.append([new_array, class_num])
       except Exception as e:
         pass
